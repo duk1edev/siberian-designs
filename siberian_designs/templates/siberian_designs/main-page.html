@@ -1,0 +1,17 @@
+{% extends 'siberian_designs/main-layout.html' %}
+{% load static %}
+<!-- {% load i18n %} -->
+{% block header %}{% endblock %}
+{% block main %}
+<body id='body-main-page'>
+  <nav class="menu mt-5">
+      <a class='mr-5' href="{% url 'services' %}">УСЛУГИ</a>
+      <a class='mr-5' href="{% url 'examples' %}">НАШИ РАБОТЫ</a>
+      <a href="{% url 'contacts' %}">КОНТАКТЫ</a>
+  </nav>
+    <div class="container text-center header-div">
+      <h1 class="display-1 text-center text-uppercase">Рекламные конcтрукции Сибири</h1>
+    </div>
+
+{% endblock %}
+{% block footer %}{% endblock %}

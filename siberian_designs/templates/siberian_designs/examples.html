@@ -1,0 +1,22 @@
+{% extends 'siberian_designs/main-layout.html' %}
+{% load static %}
+<!-- {% load i18n %} -->
+{% block main %}
+  <div class='container-fluid'>
+    <div class="row justify-content-center ">
+    {% for work in works %}
+        <div class="card col-md-3 col-xs-12 col-xl-3 mb-2 text-white border-0 example-div">
+          <a href="{% url 'example_details' work.slug  %}" class='example-link'>
+            <div class="card-img-top mt-4">
+                  <img class="work-img" src="{{work.thumb.url}}" alt="{{work.alt}}">
+            </div>
+            <div class="card-body">
+              <h4 class='my-0'>{{work.title}}</h4>
+              <p  class="text-white my-0">{{work.description}}</p>
+            </div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endblock %}

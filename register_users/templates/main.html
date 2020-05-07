@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        {% if user.is_authenticated %}
+          <a href="logout" class="btn btn-outline-warning" style="border: 1px solid black; padding: 20px 30px; margin: 100px;">  Выйти {{user.username}}</a>
+        {% else %}
+            <a href="register" class="btn btn-outline-warning " style="border: 1px solid black; padding: 20px 30px; margin: 100px;">Регистрация на сайте</a>
+            <a href="login" class="btn btn-outline-warning" style="border: 1px solid black; padding: 20px 30px; margin: 100px;">Авторизация</a>
+        {% endif %}
+    </div>
+fgfdgfdgfdgfdgfdg
+    <div class="container">
+        {% for elem in humans %}
+            <p>name - {{elem.name}}</p>
+            <p>surname - {{elem.surname}}</p>
+            <p>company - {{elem.company}}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

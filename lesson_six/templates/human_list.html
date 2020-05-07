@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson Six</title>
+</head>
+<body>
+    <h2>Hello! Lesson 6!</h2>
+    <h2>Human List</h2>
+{% block content %}
+    <table border="1" cellpadding="5px">
+        <tr style="background: blue; color: white; ">
+            <td>ID</td>
+            <td>Имя</td>
+            <td>Фамилия</td>
+            <td>Дата рождения</td>
+            <td>Компания</td>
+            <td>Должность</td>
+            <td>Язык програмирования</td>
+            <td>Зарплата</td>
+        </tr>
+        {% for human in all_humans %}
+            <tr>
+                <td>{{human.pk}}</td>
+                <td>{{human.name}}</td>
+                <td>{{human.surname}}</td>
+                <td>{{human.birth}}</td>
+                <td>{{human.company}}</td>
+                <td>{{human.position}}</td>
+                <td>{{human.language}}</td>
+                <td>{{human.salary}}</td>
+            </tr>
+        {% endfor%}
+    </table>
+<h2>Работают гугл</h2>
+    <table border="1" cellpadding="5px">
+        <tr style="background: blue; color: white; ">
+            <td>ID</td>
+            <td>Имя</td>
+            <td>Фамилия</td>
+            <td>Дата рождения</td>
+            <td>Компания</td>
+            <td>Должность</td>
+            <td>Язык програмирования</td>
+            <td>Зарплата</td>
+        </tr>
+     {% for human in workers_google %}
+            <tr>
+                <td>{{human.pk}}</td>
+                <td>{{human.name}}</td>
+                <td>{{human.surname}}</td>
+                <td>{{human.birth}}</td>
+                <td>{{human.company}}</td>
+                <td>{{human.position}}</td>
+                <td>{{human.language}}</td>
+                <td>{{human.salary}}</td>
+            </tr>
+        {% endfor%}
+    </table>
+<h2>Ordered</h2>
+    <table border="1" cellpadding="5px">
+        <tr style="background: blue; color: white; ">
+            <td>ID</td>
+            <td>Имя</td>
+            <td>Фамилия</td>
+            <td>Дата рождения</td>
+            <td>Компания</td>
+            <td>Должность</td>
+            <td>Язык програмирования</td>
+            <td>Зарплата</td>
+        </tr>
+     {% for human in ordered %}
+            <tr>
+                <td>{{human.pk}}</td>
+                <td>{{human.name}}</td>
+                <td>{{human.surname}}</td>
+                <td>{{human.birth}}</td>
+                <td>{{human.company}}</td>
+                <td>{{human.position}}</td>
+                <td>{{human.language}}</td>
+                <td>{{human.salary}}</td>
+            </tr>
+        {% endfor%}
+    </table>
+<h2>sorted</h2>
+    <table border="1" cellpadding="5px">
+        <tr style="background: blue; color: white; ">
+            <td>ID</td>
+            <td>Имя</td>
+            <td>Фамилия</td>
+            <td>Дата рождения</td>
+            <td>Компания</td>
+            <td>Должность</td>
+            <td>Язык програмирования</td>
+            <td>Зарплата</td>
+        </tr>
+     {% for human in sorted %}
+            <tr>
+                <td>{{human.pk}}</td>
+                <td>{{human.name}}</td>
+                <td>{{human.surname}}</td>
+                <td>{{human.birth}}</td>
+                <td>{{human.company}}</td>
+                <td>{{human.position}}</td>
+                <td>{{human.language}}</td>
+                <td>{{human.salary}}</td>
+            </tr>
+        {% endfor%}
+    </table>
+
+<h2>Sorted by salary</h2>
+    <table border="1" cellpadding="5px">
+        <tr style="background: blue; color: white; ">
+            <td>ID</td>
+            <td>Имя</td>
+            <td>Фамилия</td>
+            <td>Дата рождения</td>
+            <td>Компания</td>
+            <td>Должность</td>
+            <td>Язык програмирования</td>
+            <td>Зарплата</td>
+        </tr>
+     {% for human in sorted_salary %}
+            <tr>
+                <td>{{human.pk}}</td>
+                <td>{{human.name}}</td>
+                <td>{{human.surname}}</td>
+                <td>{{human.birth}}</td>
+                <td>{{human.company}}</td>
+                <td>{{human.position}}</td>
+                <td>{{human.language}}</td>
+                <td>{{human.salary}}</td>
+            </tr>
+        {% endfor%}
+    </table>
+    <hr>
+    <hr>
+    <hr>
+
+<h2>Форма поиска</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="">Enter the company:</label>
+        <input type="text" name="search">
+        <button type="submit">Search</button>
+    </form>
+{% endblock %}
+</body>
+</html>

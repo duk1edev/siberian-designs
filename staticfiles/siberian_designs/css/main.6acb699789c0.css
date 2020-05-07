@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+/*footer*/
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  background-image: url("../img/bg_all2.a21fcb29d1ee.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+.footerast{
+  background: #BFC2C1!important;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+.footerast-contacts {
+  background: #BFC2C1!important;
+  position: absolute;
+
+  width: 100%;
+  opacity: 0.8;
+}
+.about-company{
+
+}
+.footer-ul {
+  list-style: none;
+}
+.footer-ul li a{
+    color: #402C13!important;
+}
+.footer-ul li a:hover{
+  text-decoration: underline;
+  color: black!important;
+}
+/*Main page*/
+#body-main-page {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  background-image: url("../img/bg_main.312ad739a432.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header-div{
+  /* #margin-top: 25%; */
+  /*background: white;
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 0px 163px 96px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 163px 96px rgba(255,255,255,1);
+  box-shadow: 0px 0px 163px 96px rgba(255,255,255,1);*/
+  /* position: absolute;
+  top: 50%;
+  left: 20%; */
+}
+.main-link a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-link a:hover{
+  color: black;
+  text-decoration: none;
+}
+#body-main-page h1 {
+  position: fixed;
+  bottom: 15%;
+  left: 5%;
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+  /* Положение слоя от верхнего края */
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px!important;
+
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.menu a:hover{
+  text-decoration: none;
+  color: grey;
+}
+
+/*------------------------------------------------------------------------------*/
+/* services */
+.services {
+    width: 80%;
+    margin-left:10%;
+}
+.services-col-div {
+  padding-bottom: 15px;
+  background: rgba(0, 0, 0, 0.4)!important;
+}
+.outside-ul, .dop-ul {
+  list-style-image: url("../img/black_arrow.c2aeb8eb4433.png")!important ;
+  margin-left: 25px;
+}
+.dop-ul{
+  margin-left: 10px;
+}
+.outside-ul li {
+  font-size: 18px;
+  /* text-transform: full-width; */
+}
+.dop-ul li {
+  font-size: 20px;
+  /* text-transform: uppercase; */
+}
+.img-fluid {
+  max-width: 90%!important;
+  margin-left: 5%;
+  opacity: 1;
+}
+.services-more{
+ opacity:0.8;
+}
+.services-menu a{
+    color:white!important;
+}
+.services-menu a:hover{
+    text-decoration:none;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*examples*/
+.card-body: hover {
+  border: 1px solid black;
+}
+.example-card{
+    opacity: 0.8;
+}
+.example-card{
+    margin-right: 5px;
+}
+.work-img{
+    width: 100%;
+}
+.example-link {
+  color: white;
+  text-decoration: none;
+}
+.example-link:hover {
+  color: silver;
+  text-decoration: none;
+}
+.example-div {
+  /* padding: 10px; */
+  transition: .5s all;
+  background: rgba(0, 0, 0, 0.4);
+}
+.example-div:hover {
+  -webkit-box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+  transform: scale(1.01);
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*work-examples*/
+/*background: rgba(255, 255, 255, 0.5)*/
+.featurette{
+    background: rgba(255, 255, 255, 0.5);
+}
+.picture-div {
+    height:300px;
+}
+.picture-div a > img{
+    width: 80%;
+    height: 100%;
+    padding: 20px 0;
+}
+.featurette-divider {
+    margin: 5rem 0;
+    border: 0;
+    border-top: 1px solid black;
+}
+.services-menu{
+    font-size: 20px;
+}
+.card-examles :hover{
+  -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.75);
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*contacts*/
+.map {
+    border: 1px solid black;
+    margin-right: 20px;
+    float: left;
+}
+.contacts {
+    margin-top: 50px;
+}
+.contacts p{
+    font-size: 30px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+   #body-main-page h1 {
+    font-size: 37px;
+   }
+   .menu {
+    display: block;
+    margin-right: 0!important;
+    margin-top: 10px!important;
+    text-align: right;
+   }
+   .menu a {
+    display: block;
+    font-size: 15px;
+    text-align: end;
+    margin-right: 5px!important;
+    margin-top: 5px!important;
+   }
+
+}

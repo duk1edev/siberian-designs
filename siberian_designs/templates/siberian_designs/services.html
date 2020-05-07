@@ -1,0 +1,90 @@
+{% extends 'siberian_designs/main-layout.html' %}
+{% load static %}
+<!-- {% load i18n %} -->
+{% block main %}
+<h2 class="text-center my-0 py-4 bg-white">СПЕКТР НАШИХ УСЛУГ</h2>
+<!-- <hr> -->
+<div class='container-fluid d-flex mt-5'>
+  <hr>
+    <div class="row justify-content-center services">
+
+        <div class="col-xl-lg-3 col-lg-3 col-lg-3 col-md-6 col-12 mr-3 mb-3 services-col-div  border-0  text-white bg-dark">
+          <div class='card-body'>
+            <h3 class="text-center">Изготовление наружной рекламы:</h3>
+              <ul class="outside-ul">
+                <li>Вывески</li>
+                <li>Световые короба</li>
+                <li>Объемные и плоские буквы</li>
+                <li>Консоли</li>
+                <li>Указатели</li>
+                <li>Штендеры</li>
+                <li>Информационные стенды</li>
+                <li>Оформление витрин магазинов</li>
+                <li>Широкоформатная печать</li>
+                <li>Баннерные стяжки</li>
+                <li>Неоновая реклама</li>
+              </ul>
+          </div>
+          <div class='card-img-bottom'>
+                        <a data-fancybox="gallery" href="{% static 'siberian_designs/img/mdm.jpg' %}">
+                            <img class="img-fluid" src="{% static 'siberian_designs/img/mdm.jpg' %}" alt="mdm.jpg">
+                        </a>
+          </div>
+        </div>
+
+        <div class="card col-xl-lg-3 col-lg-3 col-lg-3 col-md-6 col-12 mr-3  mb-3  services-col-div border-0 text-white bg-dark">
+          <div class="card-body">
+            <h3 class="text-center">Художественно-отделочные работы на АЗС: </h3>
+              <ul class="outside-ul">
+                <li>Иформационные стелы</li>
+                <li>Световой и несветовой периметры</li>
+                <li>Объемные и плоские буквы</li>
+                <li>Указатели</li>
+                <li>Схемы движения</li>
+                <li>Отделка фасадов композитной панелью, сайдингом и т.п.</li>
+              </ul>
+          </div>
+          <div class='card-img-bottom'>
+            <a data-fancybox="gallery" href="{% static 'siberian_designs/img/siboil.jpg' %}">
+                <img class="img-fluid" src="{% static 'siberian_designs/img/siboil.jpg' %}" alt="siboil.jpg">
+            </a>
+          </div>
+        </div>
+
+        <div class="card col-xl-lg-3 col-lg-3 col-md-6 col-12 mb-3 services-col-div border-0 text-white bg-dark">
+          <div class='card-body'>
+            <h3 class='text-center'>Иные виды работ: </h3>
+            <ul class="dop-ul">
+              <li>Изготовление металлоконструкций различной сложности</li>
+              <li>Монтаж вентилируемых фасадов</li>
+              <li>Использование светодиодов в подсветке объемных букв</li>
+            </ul>
+          </div>
+          <div class='card-img-bottom'>
+            <a data-fancybox="gallery" href="{% static 'siberian_designs/img/alaska.jpg' %}">
+                <img class="img-fluid" src="{% static 'siberian_designs/img/alaska.jpg' %}" alt="1.jpg">
+            </a>
+          </div>
+        </div>
+    </div>
+
+
+
+</div>
+<div class="container-fluid services-more text-white">
+  <div class="others my-5 py-5">
+        <h3 class="mt-1 ml-3">Мы предлагаем: </h3>
+        <ul class="dop-ul">
+          <li>Креативное решение дизайн-проекта.</li>
+          <li>Индивидуальный дизайн-проект, широкая цветовая гамма, с учетом пожелания заказчика.</li>
+          <li>При оформлении АЗС используем новейшие технологии, позволяющие соблюдать противопожарную безопасность.</li>
+          <li>Качественно осуществить монтаж вентиляционного фасада придавая зданию современный и индивидуальный стиль.</li>
+          <li>Современные материалы в отделке автосалонов, торгово-развлекательных и офисных центров.</li>
+<!--      <li>Уделить особое внимание сохранению фирменного стиля заказчика.</li>-->
+        </ul>
+  </div>
+</div>
+<hr class="my-0">
+  <h2 class='container-fluid text-center text-black bg-white m-0 py-5'>По вопросам сотрудничества обращаться по телефону: +7 (913) 215-50-48</h2>
+<hr class="my-0">
+{% endblock %}
